@@ -1,4 +1,6 @@
-const initialState = {
+import { textType } from '../../types/ducks'
+
+const initialState: textType = {
   textKey: 1,
   textValue: 'default text',
 }
@@ -12,6 +14,7 @@ const valueChange = (val: typeof initialState.textValue) => {
     },
   }
 }
+
 const keyChange = (val: typeof initialState.textKey) => {
   return {
     type: 'KEYCHANGE',
