@@ -1,11 +1,10 @@
 import React from 'react'
-import Button from './button'
 import { useSelector } from 'react-redux'
-import { textType } from '../types/ducks'
+import { textType } from '@/types/ducks'
+import Button from './button'
 
 const App: React.FC = () => {
   const textValue = useSelector((state: { text: textType }) => state.text.textValue)
-  console.log(textValue)
 
   return (
     <div className="App">

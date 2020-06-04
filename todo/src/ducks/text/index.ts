@@ -1,4 +1,4 @@
-import { textType } from '../../types/ducks'
+import { textType } from '@/types/ducks'
 
 const initialState: textType = {
   textKey: 1,
